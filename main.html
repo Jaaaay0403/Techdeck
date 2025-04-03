@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techdeck Marketplace</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="main.html">Techdeck: Connect, Trade & Grow your Collection</a>
+        </div>
+        <div class="header-buttons">
+            <input type="text" placeholder="Search...">
+            <button class="live-auctions">Live Auctions</button>
+            <button class="logout" onclick="logout()">Logout</button>
+        </div>
+    </header>
+
+    <nav>
+        <button>Pokemon</button>
+        <button>Yu-Gi-Oh!</button>
+        <button>One Piece</button>
+        <button>Star Wars</button>
+        <button>Dragon Ball</button>
+        <button>NBA</button>
+        <button>More Products</button>
+    </nav>
+
+    <main>
+        <aside>
+            <h3>Filters</h3>
+            <label>Rarity:</label>
+            <input type="text">
+            <label>Condition:</label>
+            <input type="text">
+            <label>Price:</label>
+            <input type="text" placeholder="Php">
+            <button>Apply</button>
+        </aside>
+
+        <div class="cards-container">
+            <section class="cards-display">
+                <h2>Pokemon</h2>
+                <div class="cards">
+                    <img src="images/zorua.jpg" alt="Zorua Card">
+                    <img src="images/charizard.jpg" alt="Charizard Card">
+                    <img src="images/pikachu.jpg" alt="Pikachu Card">
+                    <img src="images/reshiram.jpg" alt="Reshiram Card">
+                </div>
+            </section>
+
+            <section class="cards-display">
+                <h2>One Piece</h2>
+                <div class="cards">
+                    <img src="images/luffy.jpg" alt="Luffy Card">
+                    <img src="images/zoro.jpg" alt="Zoro Card">
+                    <img src="images/sanji.jpg" alt="Sanji Card">
+                    <img src="images/nami.jpg" alt="Nami Card">
+                </div>
+            </section>
+
+            <section class="cards-display">
+                <h2>Dragon Ball</h2>
+                <div class="cards">
+                    <img src="images/goku.jpg" alt="Goku Card">
+                    <img src="images/vegeta.jpg" alt="Vegeta Card">
+                    <img src="images/frieza.jpg" alt="Frieza Card">
+                    <img src="images/cell.jpg" alt="Cell Card">
+                </div>
+            </section>
+
+            <section class="cards-display">
+                <h2>NBA</h2>
+                <div class="cards">
+                    <img src="images/jordan.png" alt="Michael Jordan Card">
+                    <img src="images/leborn.jpg" alt="LeBron James Card">
+                    <img src="images/kobe.jpg" alt="Kobe Bryant Card">
+                    <img src="images/curry.jpg" alt="Stephen Curry Card">
+                </div>
+            </section>
+
+            <section class="cards-display">
+                <h2>Yu-Gi-Oh!</h2>
+                <div class="cards">
+                    <img src="images/jinzo.jpg" alt="Jinzo Card">
+                    <img src="images/exodia.jpg" alt="Exodia Card">
+                    <img src="images/blue eyes.jpg" alt="Blue Eyes Dragon Card">
+                    <img src="images/dragon.jpeg" alt="Dragon Card">
+                    <img src="images/legen drag.jpg" alt="Legendary Dragon Card">
+                    <img src="images/tyr.jpg" alt="Tyr Card">
+                </div>
+            </section>
+
+            <section class="cards-display">
+                <h2>Star Wars</h2>
+                <div class="cards">
+                    <img src="images/chewbacca.jpg" alt="Chewbacca Card">
+                    <img src="images/din.jpg" alt="Din Card">
+                    <img src="images/din's n-1.jpg" alt="N-1 Card">
+                    <img src="images/yoda.jpg" alt="Yoda Card">
+                    <img src="images/jango.jpg" alt="Jango Card">
+                    <img src="images/razor chest.jpg" alt="Razor Crest Card">
+                </div>
+            </section>
+        </div>
+
+        <section class="chat">
+            <h3>Real-Time Chat</h3>
+            <div class="messages">
+                <p><strong>User:</strong> "Messages"</p>
+                <p><strong>User:</strong> "Messages"</p>
+            </div>
+            <input type="text" placeholder="Type your message here">
+            <button>Send</button>
+        </section>
+    </main>
+    <script>
+        const logoutButton = document.querySelector(".logout");
+        if (logoutButton) {
+            logoutButton.addEventListener("click", function () {
+                localStorage.removeItem('username');
+                window.location.href = 'login.html';
+            });
+        }
+
+        function logout() {
+            localStorage.removeItem('username');
+            window.location.href = 'login.html';
+        }
+    </script>
+</body>
+
+</html>

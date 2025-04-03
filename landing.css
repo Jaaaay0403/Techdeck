@@ -1,0 +1,50 @@
+body {
+    font-family: cursive, sans-serif;
+    font-size: x-large;
+    margin: 0;
+    padding: 0;
+    background-color: #2a2a2a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('images/loginsss.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    height: 100vh; 
+}
+
+.landing-container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+h1 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: larger;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+}
+
+button {
+    font-size: large;
+    background-color: #febd59;
+    color: white;
+    border: none;
+    padding: 30px 50px;
+    margin: 15px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgb(0, 0, 0);;
+    border-radius: 7px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
